@@ -3,27 +3,36 @@ life
 
 Conway's Game of Life written in Go using [termbox-go](https://github.com/nsf/termbox-go)
 
+![Gosper Glider Gun](http://assets.c7.se/skitch/glider_gun-20140315-004349.png)
+
 ## Installation
 
 Just go get it:
 
 		go get -u github.com/peterhellberg/life
 
+## Usage
+
+You can toggle cells (alive/dead) using the mouse and/or keyboard.
+Press `ENTER` to start the simulation or `SPACE` to step forward one generation.
+
 ## Keyboard shortcuts
 
-| Key | Action               |
-| ---:|:-------------------- |
-|  a  | draw acorn           |
-|  d  | draw dieHard         |
-|  g  | draw glider          |
-|  G  | draw gosperGliderGun |
-|  h  | move left            |
-|  j  | move down            |
-|  k  | move up              |
-|  l  | move right           |
-|  c  | clear grid           |
-|  x  | toggle cell          |
-|  q  | quit                 |
+| Key                 | Action               |
+| -------------------:|:-------------------- |
+|  a                  | draw acorn           |
+|  d                  | draw dieHard         |
+|  g                  | draw glider          |
+|  G                  | draw gosperGliderGun |
+|  h or `LEFT ARROW`  | move left            |
+|  j or `DOWN ARROW`  | move down            |
+|  k or `UP ARROW`    | move up              |
+|  l or `RIGHT ARROW` | move right           |
+|  c                  | clear grid           |
+|  x or `LEFT CLICK`  | toggle cell          |
+|  q or `ESC`         | quit                 |
+| `ENTER`             | toggle auto run      |
+| `SPACE`             | step forward         |
 
 ## License
 
