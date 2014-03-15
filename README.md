@@ -18,21 +18,21 @@ Press `ENTER` to start the simulation or `SPACE` to step forward one generation.
 
 ## Keyboard shortcuts
 
-| Key                 | Action               |
-| -------------------:|:-------------------- |
-|  a                  | draw acorn           |
-|  d                  | draw dieHard         |
-|  g                  | draw glider          |
-|  G                  | draw gosperGliderGun |
-|  h or `LEFT ARROW`  | move left            |
-|  j or `DOWN ARROW`  | move down            |
-|  k or `UP ARROW`    | move up              |
-|  l or `RIGHT ARROW` | move right           |
-|  c                  | clear grid           |
-|  x or `LEFT CLICK`  | toggle cell          |
-|  q or `ESC`         | quit                 |
-| `ENTER`             | toggle auto run      |
-| `SPACE`             | step forward         |
+| Key     | Alternate key | Action               |
+| -------:|:--------------|:-------------------- |
+|  a      |               | draw acorn           |
+|  d      |               | draw dieHard         |
+|  g      |               | draw glider          |
+|  G      |               | draw gosperGliderGun |
+|  h      | `LEFT ARROW`  | move left            |
+|  j      | `DOWN ARROW`  | move down            |
+|  k      | `UP ARROW`    | move up              |
+|  l      | `RIGHT ARROW` | move right           |
+|  c      |               | clear grid           |
+|  x      | `LEFT CLICK`  | toggle cell          |
+|  q      | `ESC`         | quit                 |
+|  r      | `ENTER`       | toggle auto run      |
+|  s      | `SPACE`       | step forward         |
 
 ## License
 

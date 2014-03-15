@@ -208,6 +208,11 @@ func main() {
 						clearGrid()
 					case 'x':
 						toggleCell(x, y)
+					case 's':
+						autoRun = false
+						tick()
+					case 'r':
+						toggleAutoRun()
 					case 'q':
 						return
 					}
