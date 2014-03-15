@@ -280,11 +280,16 @@ func tick() {
 			if isAlive(x, y) {
 				aliveCells++
 
-				if n < 2 || n > 3 {
+				if n < 2 || n > 3 { // Game of Life
+					//if !(n == 3 || n == 4 || n == 6 || n == 7 || n == 8) { // Day & Night
+					// if !(n == 2 || n == 3) { // HighLife
 					killList = append(killList, Point{x, y})
 				}
 			} else {
-				if n == 3 {
+				if n == 3 { // Game of Life
+					//if n == 3 || n == 6 || n == 7 || n == 8 { // Day & Night
+					// if n == 3 || n == 6 { // HighLife
+					//if n == 2 { // Seed
 					spawnList = append(spawnList, Point{x, y})
 				}
 			}
