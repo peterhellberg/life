@@ -307,6 +307,10 @@ func tick() {
 
 func toggleAutoRun() {
 	autoRun = !autoRun
+
+	if autoRun {
+		termbox.HideCursor()
+	}
 }
 
 func clearGrid() {
