@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"os"
@@ -9,6 +10,8 @@ import (
 
 	"github.com/nsf/termbox-go"
 )
+
+var variant = flag.String("variant", "life", "Variations on the rules [life, daynight, highlife, seed]")
 
 type Point struct {
 	X, Y int
@@ -115,6 +118,8 @@ func toggleCell(x, y int) {
 }
 
 func main() {
+	flag.Parse()
+
 	// initialize termbox
 	err := termbox.Init()
 	if err != nil {
@@ -280,16 +285,39 @@ func tick() {
 			if isAlive(x, y) {
 				aliveCells++
 
-				if n < 2 || n > 3 { // Game of Life
+				var shouldBeKilled bool
+
+				switch *variant {
+				case "life":
+					shouldBeKilled = n < 2 || n > 3
+				case "daynight":
+					shouldBeKilled = !(n == 3 || n == 4 || n == 6 || n == 7 || n == 8)
+				case "highlife":
+					shouldBeKilled = !(n == 2 || n == 3)
+				case "seed":
+					shouldBeKilled = false
+				}
+
+				if shouldBeKilled { // Game of Life
 					//if !(n == 3 || n == 4 || n == 6 || n == 7 || n == 8) { // Day & Night
 					// if !(n == 2 || n == 3) { // HighLife
 					killList = append(killList, Point{x, y})
 				}
 			} else {
-				if n == 3 { // Game of Life
-					//if n == 3 || n == 6 || n == 7 || n == 8 { // Day & Night
-					// if n == 3 || n == 6 { // HighLife
-					//if n == 2 { // Seed
+				var shouldSpawn bool
+
+				switch *variant {
+				case "life":
+					shouldSpawn = n == 3
+				case "daynight":
+					shouldSpawn = n == 3 || n == 6 || n == 7 || n == 8
+				case "highlife":
+					shouldSpawn = n == 3 || n == 6
+				case "seed":
+					shouldSpawn = n == 2
+				}
+
+				if shouldSpawn {
 					spawnList = append(spawnList, Point{x, y})
 				}
 			}
