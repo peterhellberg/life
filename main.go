@@ -197,6 +197,8 @@ func main() {
 						drawPattern(&acorn)
 					case 'd':
 						drawPattern(&dieHard)
+					case 'L':
+						drawPattern(&lightweightSpaceship)
 					case 'g':
 						drawPattern(&glider)
 					case 'G':
