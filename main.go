@@ -203,6 +203,8 @@ func main() {
 						drawPattern(&glider)
 					case 'G':
 						drawPattern(&gosperGliderGun)
+					case 't':
+						drawPattern(&lwssTagalong)
 					case 'h':
 						pressLeft()
 					case 'j':
