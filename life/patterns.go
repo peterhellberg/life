@@ -1,4 +1,4 @@
-package main
+package life
 
 var acorn = [][]int{
 	{0, 1, 0, 0, 0, 0, 0},
