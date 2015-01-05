@@ -18,6 +18,12 @@ var glider = [][]int{
 	{1, 1, 1},
 }
 
+var rPentomino = [][]int{
+	{0, 1, 1},
+	{1, 1, 0},
+	{0, 1, 0},
+}
+
 var lightweightSpaceship = [][]int{
 	{0, 1, 0, 0, 1},
 	{1, 0, 0, 0, 0},

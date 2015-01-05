@@ -126,6 +126,8 @@ func Run(variant *string) {
 					case 's':
 						autoRun = false
 						tick(variant)
+					case 'p':
+						drawPattern(&rPentomino)
 					case 'r':
 						toggleAutoRun()
 					case 'q':
