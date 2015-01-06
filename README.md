@@ -24,6 +24,7 @@ Press `ENTER` to start the simulation or `SPACE` to step forward one generation.
 |  d      |               | draw dieHard         |
 |  g      |               | draw glider          |
 |  G      |               | draw gosperGliderGun |
+|  p      |               | draw rPentomino      |
 |  h      | `LEFT ARROW`  | move left            |
 |  j      | `DOWN ARROW`  | move down            |
 |  k      | `UP ARROW`    | move up              |
