@@ -3,7 +3,7 @@ life
 
 Conway's Game of Life written in Go using [termbox-go](https://github.com/nsf/termbox-go)
 
-![Gosper Glider Gun](http://assets.c7.se/skitch/glider_gun-20140315-004349.png)
+![R-pentomino ](http://assets.c7.se/life/rPentomino.gif)
 
 ## Installation
 
