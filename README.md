@@ -1,5 +1,7 @@
-life
-====
+# life
+
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/peterhellberg/life/life)
+[![License MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/peterhellberg/life#license-mit)
 
 Conway's Game of Life written in Go using [termbox-go](https://github.com/nsf/termbox-go)
 
@@ -36,11 +38,9 @@ Press `ENTER` to start the simulation or `SPACE` to step forward one generation.
 |  r      | `ENTER`       | toggle auto run      |
 |  s      | `SPACE`       | step forward         |
 
-## License
+## License (MIT)
 
-**The MIT License (MIT)**
-
-Copyright (c) 2014 [Peter Hellberg](http://c7.se/)
+Copyright (c) 2014-2015 [Peter Hellberg](http://c7.se/)
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
